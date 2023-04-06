@@ -15,6 +15,19 @@ body {
   background-color: #fff;
 }
 
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+
 .clear {
   clear: both;
 }
@@ -29,44 +42,69 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: space-between; /* changed from space-around */
   align-items: center;
-  height: 100px;
+  height: 80px; /* reduced height for smaller screens */
   background-color: #fff;
   z-index: 1;
+  padding: 0 20px; /* added padding for better spacing */
+}
+
+/* optional: add a box-shadow for a subtle effect */
+.header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
 }
 
 .nav {
+  display: none; /* hide the navigation by default */
+}
+
+/* show the navigation when the screen is wider than 768px */
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
 }
 
 .nav li {
   display: inline-block;
+  margin: 0 10px; /* added margin for better spacing */
 }
 
 .nav li a {
+  display: flex; /* added */
+  align-items: center; /* added */
   color: #444444;
   text-decoration: none;
   text-transform: uppercase;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100px;
-  padding: 0 52px;
+  font-weight: bold;
+  font-size: 16px; /* reduced font size for smaller screens */
+  line-height: 1; /* changed from 100px */
+  padding: 0 10px; /* reduced padding for better spacing */
   text-align: center;
-  justify-content: center;
-  flex-grow: 4;
+  flex-grow: 1; /* changed from 4 */
+}
+
+/* adjust the navigation links when the screen is wider than 768px */
+@media (min-width: 768px) {
+  .nav li a {
+    font-size: 20px;
+    padding: 0 20px;
+  }
 }
 
 .nav li:hover a {
   background: linear-gradient(
-    90deg,
-    #2673d7 2.94%,
-    #6ed0b6 58%,
-    #7adf4c 109.29%
+    to right,
+    #2673d7,
+    #6ed0b6,
+    #7adf4c
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -78,6 +116,7 @@ body {
   text-align: center;
   align-items: baseline;
 }
+
 
 /* Banner */
 .banner {
@@ -423,21 +462,99 @@ p.second {
   justify-content: space-between;
 }
 
-.product__container {
-  margin: 80px 80px 0px 80px;
-  width: 40%;
-  height: 50%;
+.product__container__left {
+  margin: 80px 10px 0px 80px;
+  width: 90%;
+  height: 77.8%;
   filter: drop-shadow(8px 8px 50px rgba(38, 115, 215, 0.15));
   border: 1px solid black;
-  border-image: linear-gradient(to right,#2673d7, #6ed0b6, #7adf4c) 1;
+  border-image: linear-gradient(to right, #2673d7, #6ed0b6, #7adf4c) 1;
   background-color: #f5f6f8;
 }
 
+.product__container__right {
+  margin: 80px 80px 0px 10px;
+  width: 90%;
+  height: 77.8%;
+  filter: drop-shadow(8px 8px 50px rgba(38, 115, 215, 0.15));
+  border: 1px solid black;
+  border-image: linear-gradient(to right, #2673d7, #6ed0b6, #7adf4c) 1;
+  background-color: #f5f6f8;
+}
 
 .product__image__container {
 }
 
-.product__content__container {
+.product__content__container__left {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  transform: translate3d(96%, -15%, 0);
+}
+
+.product__content__container__left h2 {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  background: linear-gradient(
+    90deg,
+    #2673d7 2.94%,
+    #6ed0b6 58%,
+    #7adf4c 109.29%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.product__content__container__left p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #7c7b7b;
+}
+
+.product__content__container__right {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  transform: translate3d(96%, -18%, 0);
+}
+
+.product__content__container__right h2 {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  background: linear-gradient(
+    90deg,
+    #2673d7 2.94%,
+    #6ed0b6 58%,
+    #7adf4c 109.29%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.product__content__container__right p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #7c7b7b;
+}
+
+.left__arrow {
+  transform: translate3d(-100%, 50%, 0%);
+}
+
+.right__arrow {
+  float: right;
 }
 
 .footer {
