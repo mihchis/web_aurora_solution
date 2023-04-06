@@ -601,6 +601,42 @@ p.second {
   justify-content: center;
   align-items: center;
 }
+
+/* doi tac */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 212px;
+}
+
+.slide_doitac {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 186px;
+  display: flex;
+  justify-content: space-between;
+  animation: slide 6s infinite;
+}
+
+.slide_doitac:nth-child(2) {
+  animation-delay: 3s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* css cua feedback */
 .slide {
   width: 100%;
@@ -763,4 +799,47 @@ background: linear-gradient(to right,#2673d7, #6ed0b6, #7adf4c);
 .slick-dots .slick-active button{
   
   background-image:  linear-gradient(to right,#2673d7, #6ed0b6, #7adf4c);
+}
+
+/* Liên Hệ */
+.contact {
+  width: 100%;
+  padding-top: 50%;
+  background-image: url("assets/img/contactbackground.png");
+}
+
+.contact__big__container {
+}
+
+.contact__container {
+}
+
+.contact__header {
+}
+
+.contact__sub__header {
+}
+
+.contact__box {
+}
+
+.contact__box__title {
+}
+
+.contact__detail {
+}
+
+.contact__detail__header {
+}
+
+.contact__detail__address {
+}
+
+.contact__detail__phonenum {
+}
+
+.contact__detail__email {
+}
+
+.footer {
 }
