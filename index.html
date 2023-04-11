@@ -288,6 +288,7 @@
                     <div class="contact__box__title">
                         <h3>Hãy để lại lời nhắn</h3>
                     </div>
+                    <button class="btn-contact">Gửi</button>
                     <div class="contact__box__line">
                         <svg height="20" width="700">
                             <line x1="0" y1="10" x2="110" y2="10" style="stroke:rgba(36, 8, 158, 0.905);stroke-width:2" />
@@ -309,7 +310,7 @@
                         <p>54/3 Đào Duy Anh, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh</p>
                     </div>
                     <div class="contact__detail__phonenum">
-                        <img src="assets/img/phone.png" alt="phone">
+                        <img src="assets/img/headphone.png" alt="phone">
                         <p>028 6269 9278</p>
                     </div>
                     <div class="contact__detail__email">
@@ -317,6 +318,44 @@
                         <p>contact@auroratech.vn</p>
                     </div>
                 </div>
+                <!-- -- 5 text box của phần liên hệ -- -->
+                <div class="did-floating-label-content did-error-input" style="display:inline-block;width:35%;">
+                  <input class="did-floating-input" type="text" placeholder=" " id="ho-input">
+                  <label class="did-floating-label">Họ</label>
+              </div>
+              <div class="did-floating-label-content did-error-input" style="display:inline-block;margin-left:20px;width: 25%";>
+                  <input class="did-floating-input" type="text" placeholder=" " id="ten-input" >
+                  <label class="did-floating-label">Tên</label>
+              </div>
+              
+              <div class="did-floating-label-content did-error-input" style="display:inline-block;margin: right 3px; ;width: 40%";>
+                  <input class="did-floating-input" type="email" placeholder=" " id="email-input" style="width: 300px;">
+                  <label class="did-floating-label">Email</label>
+              </div>
+              
+              <div class="did-floating-label-content did-error-input" style="display:inline-block;margin: left 3px; ;width: 20%;";>
+                  <input class="did-floating-input" type="tel" placeholder=" " id="tieude-input">
+                  <label class="did-floating-label">Tiêu đề</label>
+              </div>
+              <div class="did-floating-label-content did-error-input" style="width: 70% ">
+                  <input class="did-floating-input" type="tel" placeholder=" " id="noidung-input" style="width:100%; max-width: 600px;">
+                  <label class="did-floating-label">Nội dung</label>
+              </div>
+          
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+            $(document).ready(function() {
+              $('.did-floating-input').on('focus', function() {
+              $(this).parent().addClass('did-floating-label-content-focus');
+              });
+              $('.did-floating-input').on('blur', function() {
+              if (!$(this).val()) {
+                $(this).parent().removeClass('did-floating-label-content-focus');
+              }
+              });
+            });
+            </script>
+          
             </div>
         </div>
       </div>
@@ -350,7 +389,8 @@
 
               <div class="footer-social-contact__wrapper">
                   <div class="social-contact-circle">
-                    <a href="#" class="contact-facebook-icon"></a>
+                    <li><a href="https://www.facebook.com/auroratechvn?mibextid=LQQJ4d" class="contact-facebook-icon"></a></li>
+
                   </div>
 
                   <div class="social-contact-circle">
