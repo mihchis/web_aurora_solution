@@ -752,7 +752,7 @@ p.second {
 .border-item-slide::after {
   border-left: 3rem solid transparent;
   border-top: 3rem solid #f5f6f8;
-  /* content: ""; */
+  content: "";
   height: 0;
   left: -0.5rem;
   position: absolute;
