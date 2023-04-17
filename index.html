@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aurora Tech</title>
+    <link rel="icon" href="https://auroratech.vn/wp-content/uploads/2022/09/logo.webp" type="image/x-icon" />
+
     <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Poppins:ital,wght@0,400;1,500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Poppins:ital,wght@0,400;1,500&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"  
+    />
   </head>
   <body>
     <div class="main">
@@ -21,20 +26,23 @@
       <div class="header">
         <!-- Logo Công ty -->
         <div class="logo">
-          <img src="assets/img/logo.png" alt="logo" />
+          <a href="#">
+            <img src="assets/img/logo.png" alt="logo" />
+          </a>
+          
         </div>
         <!-- Logo Công ty -->
 
         <!-- Navigation -->
         <ul class="nav">
-          <li><a href="">Giới thiệu</a></li>
-          <li><a href="">Dịch vụ</a></li>
-          <li><a href="">Giải pháp</a></li>
-          <li><a href="">Sản phẩm</a></li>
-          <li><a href="">Liên hệ</a></li>
+          <li><a href="#gioithieu">Giới thiệu</a></li>
+          <li><a href="#dichvu">Dịch vụ</a></li>
+          <li><a href="giaiphap.html">Giải pháp</a></li>
+          <li><a href="#sanpham">Sản phẩm</a></li>
+          <li><a href="#lienhe">Liên hệ</a></li>
         </ul>
         <!-- Navigation -->
-
+        <script src="header.js"></script>
         <!-- Ngôn ngữ -->
         <ul class="language">
           <img src="assets/img/vietnam.png" alt="vietnamese" />
@@ -44,6 +52,7 @@
       </div>
       <!-- End: Header -->
 
+      <!-- Begin: Banner -->
       <div class="banner">
         <span></span>
         <div class="text-banner-box"></div>
@@ -56,10 +65,11 @@
         </div>
         <button class="btn-banner">Tìm hiểu thêm</button>
       </div>
+      <!-- End: Banner -->
 
       <div class="content">
         <!-- Begin: Giới thiệu -->
-        <div class="intro">
+        <div id="gioithieu" class="intro">
           <!-- Nội dung -->
           <div class="intro__content__container">
             <h1>Đôi Nét Về</h1>
@@ -74,188 +84,239 @@
 
           <!-- Hình ảnh -->
           <div class="intro__image__container">
-            <img src="./assets/img/intro1.png" alt="image1" />
+            <div class="image1__container">
+              <img src="./assets/img/intro1.png" alt="image1" />
+            </div>
+            <div class="image2__container">
+              <img src="./assets/img/intro2.png" alt="image2" />
+            </div>
+            <div class="image3__container">
+              <img src="./assets/img/intro3.png" alt="image3" />
+            </div>
+            <div class="image4__container">
+              <img src="./assets/img/intro4.png" alt="image4" />
+            </div>
+            <!-- <img src="./assets/img/intro1.png" alt="image1" />
             <img src="./assets/img/intro2.png" alt="image2" />
             <img src="./assets/img/intro3.png" alt="image3" />
-            <img src="./assets/img/intro4.png" alt="image4" />
+            <img src="./assets/img/intro4.png" alt="image4" /> -->
           </div>
           <!-- Hình ảnh -->
         </div>
         <!-- End: Giới thiệu -->
 
         <!-- Begin: Dịch vụ -->
-          <div class="service">
-            <div class="container-service">
-                <div class="flex-service">
-                    <div class="service-title">
-                        <h1>Dịch Vụ</h1>
-                    </div>
-                    <div class="service-list">
-                        <div class="service-item">
-                            <div class="zoom-in"><img src="assets/img/service1.png" alt=""></div>
-                            <div class="service-title-item">
-                                <p>Phát triển phần mềm theo yêu cầu</p>
-                            </div>
-                            <div class="service-p-item">
-                                <p class="p-item">là công ty phát triển phần mềm hàng đầu nước ngoài được công nhận bởi chúng tôi.</p>
-                            </div>
-                        </div>
-                        <div class="service-item">
-                            <div class="zoom-in"><img src="assets/img/service2.png" alt=""></div>
-                            <div class="service-title-item">
-                                <p>Dịch vụ hạ tầng và điện toán đám mây</p>
-                            </div>
-                            <div class="service-p-item">
-                                <p class="p-item">
-                                    Dựa trên yêu cầu đã được phân tích, chúng tôi sẽ làm các bản mockup,
-                                    thiết kế giao diện, và tài liệu kỹ thuật, tư vấn công nghệ dùng cho dự án. 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="service-item">
-                            <div class="zoom-in"><img src="assets/img/service3.png" alt=""></div>
-                            <div class="service-title-item">
-                                <p>Trí tuệ nhân tạo</p>
-                            </div>
-                            <div class="service-p-item">
-                                <p class="p-item">
-                                    Sau khi đã có mô tả dự án rõ ràng, chúng tôi sẽ tiến hành viết mã (lập trình) cho web,
-                                    app. Việc kiểm tra lỗi phần mềm sẽ được thực hiện song song với việc viết mã.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="service-item">
-                            <div class="zoom-in"><img src="assets/img/service4.png" alt=""></div>
-                            <div class="service-title-item">
-                                <p>Tư vấn giải pháp cho doanh nghiệp</p>
-                            </div>
-                            <div class="service-p-item">
-                                <p class="p-item">Sau khi hoàn thành các bước phát triển và kiểm thử, chúng tôi sẽ làm tài liệu hướng dẫn sử dụng và triển khai cho khách hàng. </p>
-                            </div>
-                        </div>
-                    </div>
+        <div id="dichvu" class="service">
+          <div class="container-service">
+            <div class="flex-service">
+              <div class="service-title">
+                <h1>Dịch Vụ</h1>
+              </div>
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="zoom-in">
+                    <img src="assets/img/service1.png" alt="" />
+                  </div>
+                  <div class="service-title-item">
+                    <p>Phát triển phần mềm theo yêu cầu</p>
+                  </div>
+                  <div class="service-p-item">
+                    <p class="p-item">
+                      là công ty phát triển phần mềm hàng đầu nước ngoài được
+                      công nhận bởi chúng tôi.
+                    </p>
+                  </div>
                 </div>
+                <div class="service-item">
+                  <div class="zoom-in">
+                    <img src="assets/img/service2.png" alt="" />
+                  </div>
+                  <div class="service-title-item">
+                    <p>Dịch vụ hạ tầng và điện toán đám mây</p>
+                  </div>
+                  <div class="service-p-item">
+                    <p class="p-item">
+                      Dựa trên yêu cầu đã được phân tích, chúng tôi sẽ làm các
+                      bản mockup, thiết kế giao diện, và tài liệu kỹ thuật, tư
+                      vấn công nghệ dùng cho dự án.
+                    </p>
+                  </div>
+                </div>
+                <div class="service-item">
+                  <div class="zoom-in">
+                    <img src="assets/img/service3.png" alt="" />
+                  </div>
+                  <div class="service-title-item">
+                    <p>Trí tuệ nhân tạo</p>
+                  </div>
+                  <div class="service-p-item">
+                    <p class="p-item">
+                      Sau khi đã có mô tả dự án rõ ràng, chúng tôi sẽ tiến hành
+                      viết mã (lập trình) cho web, app. Việc kiểm tra lỗi phần mềm sẽ được thực hiện song song với việc viết mã.
+                    </p>
+                  </div>
+                </div>
+                <div class="service-item">
+                  <div class="zoom-in">
+                    <img src="assets/img/service4.png" alt="" />
+                  </div>
+                  <div class="service-title-item">
+                    <p>Tư vấn giải pháp cho doanh nghiệp</p>
+                  </div>
+                  <div class="service-p-item">
+                    <p class="p-item">
+                      Sau khi hoàn thành các bước phát triển và kiểm thử, chúng
+                      tôi sẽ làm tài liệu hướng dẫn sử dụng và triển khai cho
+                      khách hàng.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    
-    
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="https://kit.fontawesome.com/b897140b93.js" crossorigin="anonymous"></script>
+
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script
+          src="https://kit.fontawesome.com/b897140b93.js"
+          crossorigin="anonymous"
+        ></script>
         <script src="https://unpkg.com/feather-icons"></script>
         <script src="./dichvu.js"></script>
         <!-- End: Dịch vụ -->
-
-        
       </div>
       <!-- Begin: Sản Phẩm Tiêu Biểu -->
-      <div class="product">
-
+      <div id="sanpham" class="product">
         <!-- Tiêu đề -->
         <div class="product__header">
-            <h1>Sản Phẩm Tiêu Biểu</h1>
+          <h1>Sản Phẩm Tiêu Biểu</h1>
         </div>
         <!-- Tiêu đề -->
 
         <!-- Nội dung -->
         <div class="product__big__container">
+          <!-- Left Arrow -->
+          <div class="left__arrow">
+            <img src="assets/img/left-arrow.png" alt="left-arrow" />
+          </div>
+          <!-- Left Arrow -->
 
-            <!-- Left Arrow -->
-            <div class="left__arrow">
-                <img src="assets/img/left-arrow.png" alt="left-arrow">
+          <!-- HD SAISON -->
+          <div class="product__container__left">
+            <div class="product__image__container">
+              <img src="assets/img/hdsaison.png" alt="hdsaison" />
             </div>
-            <!-- Left Arrow -->
+            <div class="product__content__container__left">
+              <h2>HD SaiGon - Sales banking with Microsoft Kaizala</h2>
+              <p>
+                Chúng tôi đã có những bước tiến dài trong việc trở thành công ty
+                phát triển phần mềm hàng đầu tại Việt Nam và khu vực APAC, tập
+                trung vào việc mang lại giá trị cho doanh nghiệp của bạn bằng
+                cách tạo ra các trang web phù hợp với nhu cầu kinh doanh cụ thể
+                của bạn.
+              </p>
+            </div>
+          </div>
+          <!-- HD SAISON -->
 
-            <!-- HD SAISON -->
-            <div class="product__container__left">
-                <div class="product__image__container">
-                    <img src="assets/img/hdsaison.png" alt="hdsaison">
-                </div>
-                <div class="product__content__container__left">
-                    <h2>HD SaiGon - Sales banking with Microsoft Kaizala</h2>
-                    <p>Chúng tôi đã có những bước tiến dài trong việc trở thành công ty phát triển phần mềm hàng đầu tại Việt Nam và khu vực APAC, tập trung vào việc mang lại giá trị cho doanh nghiệp của bạn bằng cách tạo ra các trang web phù hợp với nhu cầu kinh doanh cụ thể của bạn.</p>
-                </div>
+          <!-- SCB -->
+          <div class="product__container__right">
+            <div class="product__image__container">
+              <img src="assets/img/scb.png" alt="scb" />
             </div>
-            <!-- HD SAISON -->
+            <div class="product__content__container__right">
+              <h2>SCB - Giải pháp IT Helpdesk</h2>
+              <p>
+                Chúng tôi đã có những bước tiến dài trong việc trở thành công ty
+                phát triển phần mềm hàng đầu tại Việt Nam và khu vực APAC, tập
+                trung vào việc mang lại giá trị cho doanh nghiệp của bạn bằng
+                cách tạo ra các trang web phù hợp với nhu cầu kinh doanh cụ thể
+                của bạn.
+              </p>
+            </div>
+          </div>
+          <!-- SCB -->
 
-            <!-- SCB -->
-            <div class="product__container__right">
-                <div class="product__image__container">
-                    <img src="assets/img/scb.png" alt="scb">
-                </div>
-                <div class="product__content__container__right">
-                    <h2>SCB - Giải pháp IT Helpdesk</h2>
-                    <p>Chúng tôi đã có những bước tiến dài trong việc trở thành công ty phát triển phần mềm hàng đầu tại Việt Nam và khu vực APAC, tập trung vào việc mang lại giá trị cho doanh nghiệp của bạn bằng cách tạo ra các trang web phù hợp với nhu cầu kinh doanh cụ thể của bạn.</p>
-                </div>
-            </div>
-            <!-- SCB -->
-            
-            <!-- Arrow -->
-            <div class="right__arrow">
-                <img src="assets/img/right-arrow.png" alt="right-arrow">
-            </div>
-            <!-- Arrow -->
+          <!-- Arrow -->
+          <div class="right__arrow">
+            <img src="assets/img/right-arrow.png" alt="right-arrow" />
+          </div>
+          <!-- Arrow -->
         </div>
         <!-- Nội dung -->
       </div>
-        <!-- End: Sản Phẩm Tiêu Biểu -->
+      <!-- End: Sản Phẩm Tiêu Biểu -->
 
-        <!-- Begin: Đối tác -->
+      <!-- Begin: Đối tác -->
 
-        <div class="slideshow-container">
-            <div class="slide_doitac first">
-              <img src="assets/img/aeon3.jpg">
-              <img src="assets/img/gic2.jpg">
-              <img src="assets/img/hd2.jpg">
-              <img src="assets/img/mekong2.jpg">
-            </div>
-            <div class="slide_doitac second">
-              <img src="assets/img/mic2.png">
-              <img src="assets/img/rb3.jpg">
-              <img src="assets/img/scb2.jpg">
-              <img src="assets/img/vin3.jpg">
-            </div>
-          </div>        
-        <!-- End: Đối tác -->
-        
-        <!-- START: feedback -->
-        <div class="slide">
-          <div class="container_slide">
-              <div class="flex_slide">
-                  <div class="title_slide">
-                      <h1>Khách Hàng Nói Gì Về Chúng Tôi</h1>
-                  </div>
-                  <div class="content_slide">
-                      <div class="img_slide">
-                          <img src="assets/img/slice1.png" alt="err">
-                      </div>
-                      <div></div>
-                      <div class="list-item-slide">
-                          <div class="slide-item">
-                              <div class="slide-content">
-                                  <h4> SCB - Saigon Commercial Bank </h4>
-                                  <strong>Aurora Solution</strong>
-                                  created an effective IT helpdesk solution based on Kaizala, which drastically improved the integration between requesters and supporters for us.
-                              </div>
-                              <div class="border-item-slide"></div>
-                          </div>
-                          <div class="slide-item">
-                              <div class="slide-content">
-                                  <h4> Mekong Capital </h4>
-                                  We had distinct requirements on SharePoint data migration and automatic data protection with Azure Information Protection (AIP). 
-                                  <strong>Aurora Solution</strong> implemented the whole project with our requirements excellently.
-                              </div>
-                              <div class="border-item-slide"></div>
-                          </div>
-  
-                      </div >
-                  </div>
-              </div>
-          </div>
+      <div class="slideshow-container">
+        <div class="slide_doitac first">
+          <img src="assets/img/aeon3.jpg" />
+          <img src="assets/img/gic2.jpg" />
+          <img src="assets/img/hd2.jpg" />
+          <img src="assets/img/mekong2.jpg" />
+        </div>
+        <div class="slide_doitac second">
+          <img src="assets/img/mic2.png" />
+          <img src="assets/img/rb3.jpg" />
+          <img src="assets/img/scb2.jpg" />
+          <img src="assets/img/vin3.jpg" />
+        </div>
       </div>
-  
-      
+      <script src="doitac.js"></script>
+      <!-- End: Đối tác -->
+
+      <!-- START: feedback -->
+      <div class="slide">
+        <div class="container_slide">
+          <div class="flex_slide">
+            <div class="title_slide">
+              <h1>Khách Hàng Nói Gì Về Chúng Tôi</h1>
+            </div>
+            <div class="content_slide">
+              <div class="img_slide">
+                <img src="assets/img/slice1.png" alt="err" />
+              </div>
+              <div></div>
+              <div class="list-item-slide">
+                <div class="slide-item">
+                  <div class="slide-content">
+                    <h4>SCB - Saigon Commercial Bank</h4>
+                    <strong>Aurora Solution</strong>
+                    created an effective IT helpdesk solution based on Kaizala,
+                    which drastically improved the integration between
+                    requesters and supporters for us.
+                  </div>
+                  <div class="border-item-slide"></div>
+                </div>
+                <div class="slide-item">
+                  <div class="slide-content">
+                    <h4>Mekong Capital</h4>
+                    We had distinct requirements on SharePoint data migration
+                    and automatic data protection with Azure Information
+                    Protection (AIP).
+                    <strong>Aurora Solution</strong> implemented the whole
+                    project with our requirements excellently.
+                  </div>
+                  <div class="border-item-slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <script
         type="text/javascript"
         src="https://code.jquery.com/jquery-1.11.0.min.js"
@@ -269,100 +330,154 @@
         src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
       ></script>
       <script src="/slide.js"></script>
-      <script src="https://kit.fontawesome.com/b897140b93.js" crossorigin="anonymous"></script>
+      <script
+        src="https://kit.fontawesome.com/b897140b93.js"
+        crossorigin="anonymous"
+      ></script>
       <script src="https://unpkg.com/feather-icons"></script>
-        <!-- End: feedback -->
+      <!-- End: feedback -->
 
       <!-- Begin: Liên Hệ -->
-      <div class="contact">
+      <div id="lienhe" class="contact">
         <div class="contact__big__container">
-            <div class="contact__container">
-                <div class="contact__header">
-                    <h1>Liên hệ với chúng tôi</h1>
+          <div class="contact__container">
+            <div class="contact__header">
+              <h1>Liên hệ với chúng tôi</h1>
+            </div>
+            <div class="contact__sub__header">
+              <h2>Chúng tôi có thể giúp gì cho bạn</h2>
+            </div>
+            <div class="contact__box">
+              <div class="contact__box__title">
+                <h3>Hãy để lại lời nhắn</h3>
+              </div>
+              <button class="btn-contact">Gửi</button>
+              <div class="contact__box__line">
+                <svg height="20" width="700">
+                  <defs>
+                    <linearGradient
+                      id="myGradient"
+                      x1="0"
+                      y1="0"
+                      x2="100%"
+                      y2="0"
+                    >
+                      <stop offset="0%" stop-color="#2673d7" />
+                      <stop offset="50%" stop-color="#6ed0b6" />
+                      <stop offset="100%" stop-color="#7adf4c" />
+                    </linearGradient>
+                  </defs>
 
-                </div>
-                <div class="contact__sub__header">
-                    <h2>Chúng tôi có thể giúp gì cho bạn</h2>
-                </div>
-                <div class="contact__box">
-                    <div class="contact__box__title">
-                        <h3>Hãy để lại lời nhắn</h3>
-                    </div>
-                    <button class="btn-contact">Gửi</button>
-                    <div class="contact__box__line">
-                        <svg height="20" width="700">
-                            <line x1="0" y1="10" x2="110" y2="10" style="stroke:rgba(36, 8, 158, 0.905);stroke-width:2" />
-                        </svg>
-                    </div>
+                  <rect
+                    x="0"
+                    y="9"
+                    width="110"
+                    height="2"
+                    fill="url(#myGradient)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail__line">
+                <svg height="20" width="100">
+                  <line
+                    x1="0"
+                    y1="10"
+                    x2="110"
+                    y2="10"
+                    style="stroke: rgba(255, 255, 255, 0.905); stroke-width: 2"
+                  />
+                </svg>
+              </div>
+              <div class="contact__detail__header">
+                <h3>Thông Tin Liên Hệ</h3>
+              </div>
+              <div class="contact__detail__address">
+                <img
+                  src="assets/img/location.png"
+                  alt="location"
+                  style="height: 40px"
+                />
+                <p>
+                  54/3 Đào Duy Anh, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh
+                </p>
+              </div>
+              <div class="contact__detail__phonenum">
+                <img src="assets/img/headphone.png" alt="phone" />
+                <p>028 6269 9278</p>
+              </div>
+              <div class="contact__detail__email">
+                <img src="assets/img/email.png" alt="email" />
+                <p>contact@auroratech.vn</p>
+              </div>
+            </div>
+            <!-- -- 5 text box của phần liên hệ -- -->
 
-                </div>
-                <div class="contact__detail">
-                    <div class="contact__detail__line">
-                        <svg height="20" width="100">
-                            <line x1="0" y1="10" x2="110" y2="10" style="stroke:rgba(255, 255, 255, 0.905);stroke-width:2" />
-                        </svg>
-                    </div>
-                    <div class="contact__detail__header">
-                        <h3>Thông Tin Liên Hệ</h3>
-                    </div>
-                    <div class="contact__detail__address">
-                        <img src="assets/img/loaction.png" alt="loaction">
-                        <p>54/3 Đào Duy Anh, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh</p>
-                    </div>
-                    <div class="contact__detail__phonenum">
-                        <img src="assets/img/headphone.png" alt="phone">
-                        <p>028 6269 9278</p>
-                    </div>
-                    <div class="contact__detail__email">
-                        <img src="assets/img/email.png" alt="email">
-                        <p>contact@auroratech.vn</p>
-                    </div>
-                </div>
-                <!-- -- 5 text box của phần liên hệ -- -->
-                <div class="did-floating-label-content did-error-input" style="display:inline-block;width:35%;">
-                  <input class="did-floating-input" type="text" placeholder=" " id="ho-input">
-                  <label class="did-floating-label">Họ</label>
-              </div>
-              <div class="did-floating-label-content did-error-input" style="display:inline-block;margin-left:20px;width: 25%";>
-                  <input class="did-floating-input" type="text" placeholder=" " id="ten-input" >
-                  <label class="did-floating-label">Tên</label>
-              </div>
-              
-              <div class="did-floating-label-content did-error-input" style="display:inline-block;margin: right 3px; ;width: 40%";>
-                  <input class="did-floating-input" type="email" placeholder=" " id="email-input" style="width: 300px;">
-                  <label class="did-floating-label">Email</label>
-              </div>
-              
-              <div class="did-floating-label-content did-error-input" style="display:inline-block;margin: left 3px; ;width: 20%;";>
-                  <input class="did-floating-input" type="tel" placeholder=" " id="tieude-input">
-                  <label class="did-floating-label">Tiêu đề</label>
-              </div>
-              <div class="did-floating-label-content did-error-input" style="width: 70% ">
-                  <input class="did-floating-input" type="tel" placeholder=" " id="noidung-input" style="width:100%; max-width: 600px;">
-                  <label class="did-floating-label">Nội dung</label>
-              </div>
-          
+            <div class="did-floating-label-content hoten__content">
+              <input
+                class="did-floating-input hoten__input"
+                type="text"
+                placeholder=" "
+                id="hoten"
+              />
+              <label class="did-floating-label">Họ và tên *</label>
+            </div>
+
+            <div class="did-floating-label-content email__content">
+              <input
+                class="did-floating-input email__input"
+                type="text"
+                placeholder=" "
+                id="email"
+              />
+              <label class="did-floating-label">Email *</label>
+            </div>
+
+            <div class="did-floating-label-content chude__content">
+              <input
+                class="did-floating-input chude__input"
+                type="text"
+                placeholder=" "
+                id="chude"
+              />
+              <label class="did-floating-label">Tiêu đề *</label>
+            </div>
+
+            <div class="did-floating-label-content loinhan__content">
+              <input
+                class="did-floating-input loinhan__input"
+                type="text"
+                placeholder=" "
+                id="loinhan"
+              />
+              <label class="did-floating-label"
+                >Lời nhắn bạn muốn gửi đến Aurora *</label
+              >
+            </div>
+
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
-            $(document).ready(function() {
-              $('.did-floating-input').on('focus', function() {
-              $(this).parent().addClass('did-floating-label-content-focus');
+              $(document).ready(function () {
+                $(".did-floating-input").on("focus", function () {
+                  $(this).parent().addClass("did-floating-label-content-focus");
+                });
+                $(".did-floating-input").on("blur", function () {
+                  if (!$(this).val()) {
+                    $(this)
+                      .parent()
+                      .removeClass("did-floating-label-content-focus");
+                  }
+                });
               });
-              $('.did-floating-input').on('blur', function() {
-              if (!$(this).val()) {
-                $(this).parent().removeClass('did-floating-label-content-focus');
-              }
-              });
-            });
             </script>
-          
-            </div>
+          </div>
         </div>
       </div>
       <!-- End: Liên Hệ -->
-      </div>
-<!-- START: Footer -->
-      <div class="footer">
+    </div>
+    <!-- START: Footer -->
+    <!-- <div class="footer">
         <div class="footer-wrapper">
           <div class="footer-logo__wrapper">
             <div class="footer-logo__img"></div>
@@ -406,8 +521,7 @@
           <div class="footer-background-wrapper">
           </div>
         </div>
-      </div>
-<!-- End: Footer -->
-    </div>
+      </div> -->
+    <!-- End: Footer -->
   </body>
 </html>

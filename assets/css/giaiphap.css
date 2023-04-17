@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Formatting */
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #878787;
+  background-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.clear {
+  clear: both;
+}
+
+.main {
+}
+
+/* Header */
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+  z-index: 99999;
+  padding: 0 20px;
+}
+
+/* optional: add a box-shadow for a subtle effect */
+.header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+}
+
+.nav {
+  display: none; /* hide the navigation by default */
+}
+
+/* show the navigation when the screen is wider than 768px */
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav li a {
+  display: flex;
+  align-items: center;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* adjust the navigation links when the screen is wider than 768px */
+@media (min-width: 768px) {
+  .nav li a {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+}
+
+.nav li:hover a {
+  background: linear-gradient(to right, #2673d7, #6ed0b6, #7adf4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.language {
+  justify-content: space-around;
+  text-align: center;
+  align-items: baseline;
+}
+.content {
+}
+
+.giaiphap__banner {
+}
+
+.giaiphap__banner__container {
+  height: 830px;
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  background: url("/assets/img_giaiphap/bannerbackground.png") top center /
+    cover no-repeat;
+  background-color: #333;
+}
+
+.giaiphap__banner__container .giaiphap__banner__content__container {
+  position: absolute;
+  top: 250px;
+  left: 200px;
+  width: 40%;
+}
+
+.giaiphap__banner__container .giaiphap__banner__content__container h1 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+
+  margin-bottom: 50px;
+  /* aurora */
+
+  background: linear-gradient(
+    90deg,
+    #2673d7 2.94%,
+    #6ed0b6 58%,
+    #7adf4c 109.29%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.giaiphap__banner__container .giaiphap__banner__content__container strong {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 35px;
+  /* or 152% */
+
+  background: linear-gradient(
+    89.97deg,
+    #2673d7 0.05%,
+    #6ed0b6 12.35%,
+    #7adf4c 23.81%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.nentang__container {
+  width: 100%;
+  height: 830px;
+  margin-top: 100px;
+}
+
+.nentang__content__container {
+  width: 93%;
+  height: 20%;
+  margin:0 100px;
+}
+
+.nentang__content__container h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  color: #434444;
+  margin-left: 8%;
+}
+.nentang__content__container p{
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #656669;
+}
+.nentang__image__container{
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100%;
+  display: flex;
+}
+
+.nentang__image1__container {
+
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.nentang__image2__container{
+
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.nentang__image3__container{
+
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.nentang__image4__container{
+
+
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.nentang__image1__container img{
+  width: 700px;
+  height: 450px;
+}
+
+.nentang__image2__container img{
+  width: 700px;
+  height: 550px;
+}
+
+.nentang__image3__container img{
+  width: 700px;
+  height: 500px;
+}
+
+.nentang__image4__container img{
+  width: 700px;
+  height: 450px;
+}
+/* hieu ung hover image 1 */
+.image__overlay__img1{
+  position:absolute;
+  font-family: 'Work Sans',sans-serif;
+  font-style: normal;
+  color: #FFFFFF;
+  word-wrap: break-word;
+  max-width: 45%;
+}
+.image__tittle__img1{
+  margin-top: 250px;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  opacity: 1;
+}
+.image__discription__img1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  opacity:0;
+
+}
+.image__discription__img1:hover{
+  transform: translateX(5px);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+/* hieu ung hover image 2 */
+
+.image__overlay__img2{
+  position:absolute;
+  font-family: 'Work Sans',sans-serif;
+  font-style: normal;
+  color: #FFFFFF;
+  word-wrap: break-word;
+  max-width: 42%;
+}
+.image__tittle__img2{
+  margin-top: 300px;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  opacity: 1;
+}
+.image__discription__img2{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  opacity:0;
+
+}
+.image__discription__img2:hover{
+  transform: translateX(5px);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+/* hieu ung hover image 3 */
+.image__overlay__img3{
+  position:absolute;
+  font-family: 'Work Sans',sans-serif;
+  font-style: normal;
+  color: #FFFFFF;
+  word-wrap: break-word;
+  max-width: 40%;
+}
+.image__tittle__img3{
+  margin-top: 320px;
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  opacity: 1;
+}
+.image__discription__img3{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  opacity:0;
+
+}
+.image__discription__img3:hover{
+  transform: translateX(5px);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+/* hieu ung hover image 4 */
+.image__overlay__img4{
+  position:absolute;
+  font-family: 'Work Sans',sans-serif;
+  font-style: normal;
+  color: #FFFFFF;
+  word-wrap: break-word;
+  max-width: 40%;
+}
+.image__tittle__img4{
+  margin-top: 250px;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  opacity: 1;
+}
+.image__discription__img4{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  opacity:0;
+
+}
+.image__discription__img4:hover{
+  transform: translateX(5px);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
