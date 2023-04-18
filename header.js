@@ -1,15 +1,16 @@
 window.onload = function() {
-  const sections = {
-    'gioithieu': document.getElementById('gioithieu'),
-    'dichvu': document.getElementById('dichvu'),
-    'sanpham': document.getElementById('sanpham'),
-    'lienhe': document.getElementById('lienhe')
-  };
+  var gioiThieu = document.getElementById('gioithieu');
+  var dichvu = document.getElementById('dichvu');
+  var sanpham = document.getElementById('sanpham');
+  var lienhe = document.getElementById('lienhe');
 
-  for (const [hash, section] of Object.entries(sections)) {
-    if (window.location.hash === '#' + hash && section) {
-      window.scrollTo(0, section.offsetTop);
-      break;
-    }
+  if (window.location.hash === '#gioithieu' && gioiThieu) {
+    window.scrollTo(0, gioiThieu.offsetTop);
+  } else if (window.location.hash === '#dichvu' && dichvu) {
+    window.scrollTo(0, dichvu.offsetTop);
+  } else if (window.location.hash === '#sanpham' && sanpham) {
+    window.scrollTo(0, sanpham.offsetTop);
+  } else if (window.location.hash === '#lienhe' && lienhe) {
+    window.scrollTo(0, lienhe.offsetTop);
   }
 };
