@@ -115,14 +115,13 @@ html {
   padding-top: 50%;
   background: url("/assets/img_giaiphap/bannerbackground.png") top center /
     cover no-repeat;
-  background-color: #333;
 }
 
 .giaiphap__banner__container .giaiphap__banner__content__container {
   position: absolute;
-  top: 250px;
-  left: 200px;
-  width: 40%;
+  top: 180px;
+  left: 230px;
+  width: 33%;
 }
 
 .giaiphap__banner__container .giaiphap__banner__content__container h1 {
@@ -133,7 +132,6 @@ html {
   line-height: 75px;
 
   margin-bottom: 50px;
-  /* aurora */
 
   background: linear-gradient(
     90deg,
@@ -152,7 +150,6 @@ html {
   font-weight: 600;
   font-size: 23px;
   line-height: 35px;
-  /* or 152% */
 
   background: linear-gradient(
     89.97deg,
@@ -164,16 +161,204 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* BEGIN: Mạng lưới cá nhân hóa chuyên nghiệp */
+
+.mangluoi {
+  height: 830px;
+  position: relative;
+  width: 100%;
+  background: url("/assets/img_giaiphap/mangluoibackground.png") top center /
+    cover no-repeat;
+}
+
+.mangluoi__content__container {
+  position: absolute;
+  text-align: justify;
+  top: 0;
+  padding-top: 90px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 0px;
+}
+
+.mangluoi__content__container h1 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 27px;
+  padding-bottom: 30px;
+
+  color: #434444;
+}
+
+.mangluoi__content__container p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+
+  color: #656669;
+}
+
+.mangluoi__image__container {
+  position: absolute;
+  height: fit-content;
+  bottom: 130px;
+  margin: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mangluoi__text1 {
+  width: 396px;
+  position: absolute;
+  height: fit-content;
+  align-items: center;
+  text-align: center;
+  bottom: 150px;
+}
+
+.mangluoi__text2 {
+  width: 396px;
+  position: absolute;
+  height: fit-content;
+
+  align-items: center;
+  text-align: center;
+  bottom: 150px;
+}
+
+.mangluoi__text3 {
+  width: 396px;
+  position: absolute;
+  height: fit-content;
+  align-items: center;
+  text-align: center;
+  bottom: 150px;
+}
+
+.mangluoi__text1 h2 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #fff;
+}
+
+.mangluoi__text2 h2 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #fff;
+}
+
+.mangluoi__text3 h2 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #fff;
+}
+
+.mangluoi__text__description {
+  position: absolute;
+  bottom: 30px;
+  opacity: 0;
+  padding: 5px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #fff;
+
+  width: 396px;
+}
+
+.mangluoi__icon {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 148px;
+  padding-right: 148px;
+
+  top: 20px;
+
+  opacity: 0;
+}
+
+.mangluoi__img:hover .mangluoi__text__description {
+  opacity: 1;
+}
+
+.mangluoi__text {
+  transform: translateY(350%);
+  transition: transform 0.3s ease;
+}
+
+.mangluoi__item {
+  justify-content: center;
+  width: fit-content;
+}
+
+.mangluoi__img {
+  width: 90%;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.mangluoi__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.mangluoi__img:hover {
+  transform: scale(1.1); /* Adjust zoom level as needed */
+}
+
+.mangluoi__img:hover .mangluoi__text {
+  transform: translateY(0); /* Slide text up to original position on hover */
+}
+
+.mangluoi__img:hover .mangluoi__icon {
+  opacity: 1;
+}
+
+/* END: Mạng lưới cá nhân hóa chuyên nghiệp */
+
+/* BEGIN: NỀN TẢNG */
 .nentang__container {
   width: 100%;
+  height: 1385px;
+  background-color: #333;
+}
+.nentang__image__column1_container {
+  width: 100%;
   height: 830px;
-  margin-top: 100px;
 }
 
 .nentang__content__container {
-  width: 93%;
-  height: 20%;
-  margin:0 100px;
+  width: 100%;
+  height: 15%;
+  padding: 0 100px;
+  text-align: justify;
 }
 
 .nentang__content__container h1 {
@@ -183,107 +368,132 @@ html {
   font-size: 23px;
   line-height: 27px;
   color: #434444;
-  margin-left: 8%;
+  padding-bottom: 30px;
+  padding-top: 50px;
 }
-.nentang__content__container p{
+.nentang__content__container p {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
   color: #656669;
+  padding-bottom: 30px;
 }
-.nentang__image__container{
+.nentang__image__container {
   margin-left: 100px;
   margin-right: 100px;
-  height: 100%;
+  height: 1100px;
+  width: 770px;
   display: flex;
 }
 
 .nentang__image1__container {
-
   margin-right: 30px;
   margin-top: 30px;
 }
 
-.nentang__image2__container{
-
+.nentang__image2__container {
   margin-right: 30px;
   margin-top: 30px;
 }
-.nentang__image3__container{
-
+.nentang__image3__container {
   margin-right: 30px;
   margin-top: 30px;
 }
-.nentang__image4__container{
-
-
+.nentang__image4__container {
   margin-right: 30px;
   margin-top: 30px;
 }
 
-.nentang__image1__container img{
-  width: 700px;
+.nentang__image1__container img {
+  width: 650px;
   height: 450px;
 }
 
-.nentang__image2__container img{
-  width: 700px;
+.nentang__image2__container img {
+  width: 650px;
   height: 550px;
 }
 
-.nentang__image3__container img{
-  width: 700px;
+.nentang__image3__container img {
+  width: 650px;
   height: 500px;
 }
 
-.nentang__image4__container img{
-  width: 700px;
-  height: 450px;
+.nentang__image4__container img {
+  width: 650px;
+  height: 400px;
 }
+
+.nentang__item:hover .image__description {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
 /* hieu ung hover image 1 */
-.image__overlay__img1{
-  position:absolute;
-  font-family: 'Work Sans',sans-serif;
+.image__overlay__img1 {
+  position: absolute;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   word-wrap: break-word;
   max-width: 45%;
 }
-.image__tittle__img1{
-  margin-top: 250px;
+.image__tittle__img1 {
+  margin-top: 230px;
   margin-left: 30px;
   font-weight: 700;
   font-size: 23px;
   line-height: 27px;
   opacity: 1;
 }
-.image__discription__img1{
-  margin-top: 10px;
+.image__discription__img1 {
+  padding: 10px 40px 10px 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  opacity: 0;
+}
+
+/* hieu ung hover image 2 */
+
+.image__overlay__img2 {
+  position: absolute;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  word-wrap: break-word;
+  max-width: 42%;
+}
+.image__tittle__img2 {
+  margin-top: 280px;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  opacity: 1;
+}
+
+.image__discription__img2 {
+  margin-top: 20px;
   margin-left: 30px;
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
-  opacity:0;
-
+  opacity: 0;
 }
-.image__discription__img1:hover{
-  transform: translateX(5px);
-  transition: opacity 0.3s ease;
-  opacity: 1;
-}
-/* hieu ung hover image 2 */
 
-.image__overlay__img2{
-  position:absolute;
-  font-family: 'Work Sans',sans-serif;
+/* hieu ung hover image 3 */
+.image__overlay__img3 {
+  position: absolute;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   word-wrap: break-word;
-  max-width: 42%;
+  max-width: 40%;
 }
-.image__tittle__img2{
+.image__tittle__img3 {
   margin-top: 300px;
   margin-left: 30px;
   font-weight: 700;
@@ -291,79 +501,486 @@ html {
   line-height: 27px;
   opacity: 1;
 }
-.image__discription__img2{
+.image__discription__img3 {
   margin-top: 10px;
   margin-left: 30px;
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
-  opacity:0;
+  opacity: 0;
+}
 
-}
-.image__discription__img2:hover{
-  transform: translateX(5px);
-  transition: opacity 0.3s ease;
-  opacity: 1;
-}
-/* hieu ung hover image 3 */
-.image__overlay__img3{
-  position:absolute;
-  font-family: 'Work Sans',sans-serif;
-  font-style: normal;
-  color: #FFFFFF;
-  word-wrap: break-word;
-  max-width: 40%;
-}
-.image__tittle__img3{
-  margin-top: 320px;
-  margin-left: 40px;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 27px;
-  opacity: 1;
-}
-.image__discription__img3{
-  margin-top: 10px;
-  margin-left: 30px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 35px;
-  opacity:0;
-
-}
-.image__discription__img3:hover{
-  transform: translateX(5px);
-  transition: opacity 0.3s ease;
-  opacity: 1;
-}
 /* hieu ung hover image 4 */
-.image__overlay__img4{
-  position:absolute;
-  font-family: 'Work Sans',sans-serif;
+.image__overlay__img4 {
+  position: absolute;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   word-wrap: break-word;
   max-width: 40%;
 }
-.image__tittle__img4{
-  margin-top: 250px;
-  margin-left: 30px;
+.image__tittle__img4 {
+  margin-top: 170px;
+  margin-left: 25px;
   font-weight: 700;
   font-size: 23px;
   line-height: 27px;
   opacity: 1;
 }
-.image__discription__img4{
+.image__discription__img4 {
   margin-top: 10px;
   margin-left: 30px;
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
-  opacity:0;
-
+  opacity: 0;
 }
-.image__discription__img4:hover{
-  transform: translateX(5px);
-  transition: opacity 0.3s ease;
-  opacity: 1;
+
+/* -- hiệu ứng hover nhảy chữ lên trên --  */
+.image__tittle__img1 {
+  transform: translateY(350%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* .image__overlay__img1:hover .nentang__text {
+  transform: translateY(0);
+} */
+
+.image__tittle__img2 {
+  transform: translateY(350%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* .image__overlay__img2:hover .nentang__text2 {
+  transform: translateY(0);
+} */
+
+.image__tittle__img3 {
+  transform: translateY(350%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* .image__overlay__img3:hover .nentang__text3 {
+  transform: translateY(0);
+} */
+
+.image__tittle__img4 {
+  transform: translateY(350%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* .image__overlay__img4:hover .nentang__text4 {
+  transform: translateY(0);
+  transition: transform 0.4 ease;
+} */
+
+.nentang__item:hover .nentang__text {
+  transform: translateY(0);
+}
+/* -- hết hiệu ứng hover nhảy chữ lên trên --  */
+/* END: NỀN TẢNG */
+
+.nentang__container {
+  width: 100%;
+  height: 1385px;
+  background: url("/assets/img_giaiphap/nentangbackground.png") top center /
+    cover no-repeat;
+}
+
+.kyc {
+}
+
+.kyc__container {
+  height: 764px;
+  position: relative;
+  width: 100%;
+  background: url("/assets/img_giaiphap/kycbackground.png") top center / cover
+    no-repeat;
+}
+
+.kyc__content__container {
+  position: absolute;
+  top: 0;
+  padding: 70px 100px 40px 100px;
+}
+
+.kyc__content__container h2 {
+  padding-bottom: 30px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+
+  color: #434444;
+}
+
+.kyc__content__container p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+
+  text-align: justify;
+
+  color: #656669;
+}
+
+.kyc__image__container {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.container,
+.container1,
+.container2 {
+  display: flex;
+  position: relative;
+  width: 430px;
+  height: 430px;
+}
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+.thecard:hover,
+.thecard1:hover,
+.thecard2:hover {
+  transform: rotateY(180deg);
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/img_giaiphap/kyc_image_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.thefront h1 {
+  position: absolute;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+  bottom: 90px;
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/img_giaiphap/kyc_image_4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  transform: rotateY(180deg);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theback__title h1 {
+  position: absolute;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+  top: 130px;
+  padding-left: 60px;
+}
+
+.theback p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #ffffff;
+  width: 75%;
+  padding-top: 40px;
+}
+
+.thecard1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+.thefront1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/img_giaiphap/kyc_image_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+
+  justify-content: center;
+}
+
+.thefront1 h1 {
+  position: absolute;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+  bottom: 75px;
+  width: 75%;
+}
+
+.theback1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/img_giaiphap/kyc_image_5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  transform: rotateY(180deg);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theback1__title h1 {
+  position: absolute;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+  top: 100px;
+  width: 70%;
+  padding-left: 20px;
+}
+
+.theback1 p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #ffffff;
+  width: 75%;
+  padding-top: 40px;
+}
+
+.thecard2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+.thefront2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/img_giaiphap/kyc_image_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thefront2 h1 {
+  position: absolute;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+  bottom: 75px;
+  width: 60%;
+}
+
+.theback2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/img_giaiphap/kyc_image_6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backface-visibility: hidden;
+  color: #fff;
+  transform: rotateY(180deg);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theback2__title h1 {
+  position: absolute;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+  top: 120px;
+  width: 70%;
+  padding-left: 25px;
+}
+
+.theback2 p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #ffffff;
+  width: 75%;
+  padding-top: 40px;
+}
+
+.tainguyen {
+}
+
+.tainguyen__container {
+  height: 830px;
+  position: relative;
+  width: 100%;
+  background: url("/assets/img_giaiphap/tainguyenbackground.png") top center /
+    cover no-repeat;
+}
+
+.tainguyen__container h1 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 27px;
+
+  color: #434444;
+
+  padding: 50px 0 50px 100px;
+}
+
+.tainguyen__image__container {
+  display: grid;
+  grid-template-columns: 450px 200px;
+  gap: 10px;
+}
+
+.tainguyen__image2__container {
+  display: grid;
+  grid-template-rows: 250px 250px;
+  gap: 10px;
+}
+
+.tainguyen__image3__container {
+  display: grid;
+  grid-template-columns: 400px 300px;
+  gap: 10px;
+}
+
+.tainguyen__item {
+  width: fit-content;
+}
+
+.erp__img {
+  width: 450px;
+  height: 460px;
+}
+
+.taichinh__img {
+  width: 810px;
+  height: 250px;
+}
+
+.web-ungdung__img {
+  width: 400px;
+  height: 210px;
+}
+
+.phantichthitruong__img {
+  width: 400px;
+  height: 210px;
+}
+
+.tainguyen__item h2 {
+  position: absolute;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+
+  padding: 0 0 0 20px;
+}
+
+.tainguyen__image3__container .tainguyen__title {
+  position: absolute;
+  width: 50%;
+  bottom: 90px;
+}
+
+.tainguyen__image2__container .tainguyen__title2 {
+  position: absolute;
+  width: 50%;
+  bottom: 320px;
+}
+
+.tainguyen__image__container .tainguyen__title1 {
+  position: absolute;
+  width: 50%;
+  bottom: 94px;
 }

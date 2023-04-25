@@ -19,10 +19,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.clear{
+.clear {
   clear: both;
 }
-.main{
+.main {
 }
 /* Header */
 .header {
@@ -72,14 +72,13 @@ html {
   color: #444444;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600; /* change from bold to semibold */
+  font-weight: bold;
   font-size: 16px;
   line-height: 1;
   padding: 0 10px;
   text-align: center;
   flex-grow: 1;
 }
-
 
 /* adjust the navigation links when the screen is wider than 768px */
 @media (min-width: 768px) {
@@ -95,12 +94,7 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.nav li:active{
-  background: linear-gradient(to right, #2673d7, #6ed0b6, #7adf4c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+
 .language {
   justify-content: space-around;
   text-align: center;
@@ -154,11 +148,12 @@ html {
 }
 
 .text-banner-box {
+  background: url(/assets/img/789.png) top center / contain no-repeat;
   position: absolute;
-  width: 55%;
-  height: 64%;
-  left: 0px;
-  top: 6%;
+  width: 80%;
+  height: 85%;
+  left: -400px;
+  top: 3%;
   background: linear-gradient(
     90deg,
     rgba(217, 214, 212, 0.95) 34.55%,
@@ -233,11 +228,11 @@ p.second {
   font-weight: 500;
   font-size: 22px;
   line-height: 35px;
-  color: #656669;
+  color: #202020;
 }
 
 .btn-banner {
-  top: 57%;
+  top: 70%;
   left: 7%;
   position: absolute;
   border: none;
@@ -265,7 +260,7 @@ p.second {
 
 .content {
 }
-
+/* aa */
 /* Giới thiệu */
 .intro {
   position: relative;
@@ -318,8 +313,8 @@ p.second {
 }
 .image4__container {
   position: absolute;
-  width: 375px;
-  height: 306.28px;
+  width: 325px;
+  height: 250px;
   left: 300px;
   top: 355px;
 }
@@ -632,8 +627,8 @@ p.second {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 212px;
+  width: 99%;
+  height: 186px;
   display: flex;
   justify-content: space-between;
   animation: slide 6s infinite;
@@ -641,17 +636,6 @@ p.second {
 
 .slide_doitac:nth-child(2) {
   animation-delay: 3s;
-}
-
-.slide_doitac img {
-  width: 100%;
-  height: 212px;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.slide_doitac.active img {
-  z-index: 1;
 }
 
 @keyframes slide {
@@ -665,7 +649,6 @@ p.second {
     transform: translateY(0);
   }
 }
-
 /* Đối tác */
 
 /* css cua feedback */
@@ -1118,11 +1101,11 @@ p.second {
 
 /* working info text */
 .workinginfo-time-detail {
-  font-family: "Open Sans";
+  font-family: "Work Sans";
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
-  color: #000000;
+  color: #fff;
 }
 
 .workinginfo-phone-detail {
@@ -1131,7 +1114,7 @@ p.second {
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
 }
 
 .workinginfo-mail-detail {
@@ -1139,8 +1122,8 @@ p.second {
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  text-decoration-line: underline;
-  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  /* color: rgba(0, 0, 0, 0.7); */
 }
 
 .footer-social-contact__wrapper {
@@ -1343,4 +1326,174 @@ p.second {
     #6ed0b6 56.67%,
     #7adf4c 109.29%
   );
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0px;
+  background: url("/assets/img/footer.png") top center / contain no-repeat;
+}
+.footer-logo__wrapper hr {
+  position: absolute;
+  left: 100px;
+  right: 12.71%;
+  top: 80.33%;
+  bottom: 50px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.15;
+  border: 1px solid #ffffff;
+}
+.footer-wrapper {
+  display: flex;
+  width: 500px;
+  height: 200px;
+  gap: 12px;
+  justify-content: space-between;
+}
+.footer-logo__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 400px;
+  gap: 30px;
+}
+.footer-copyright {
+  position: absolute;
+  width: 485px;
+  height: 26px;
+  left: calc(50% - 485px / 2 + 0.5px);
+  bottom: 30px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #656669;
+}
+
+.footer-logo__wrapper .footer-logo__img {
+  background: url(./../img/logo.png) center / contain no-repeat;
+  width: 200px;
+  height: 210px;
+}
+
+.list-footer-dv {
+  position: absolute;
+  height: 280px;
+  left: 48%;
+  right: 30.47%;
+  top: 30px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.list-footer-dv h3 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+  color: #ffffff;
+}
+.footer-workinginfo-col {
+  display: flex;
+  justify-content: left;
+  height: 35px;
+  width: 330px;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.footer-workinginfo__wrapper {
+  position: absolute;
+  width: 377px;
+  height: 176.51px;
+  left: 350px;
+  top: 85px;
+  color: #ffffff;
+}
+.list-footer-gp {
+  position: absolute;
+  height: 280px;
+  left: 73%;
+  right: 0;
+  top: 30px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.list-footer-gp h3 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+  color: #ffffff;
+}
+.content-footer-ab {
+  width: 350px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 1;
+  gap: 16px;
+}
+.content-footer-ab h3 {
+  position: absolute;
+  height: 28px;
+  left: 2%;
+  right: 88.85%;
+  top: 190px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+}
+.workinginfo-phone-detail {
+  margin-left: 8px;
+}
+/* .social-contact-fb {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+}
+.social-contact-ins {
+  position: absolute;
+
+  right: 0px;
+  top: 25px;
+}
+.social-contact-tw {
+  position: absolute;
+  left: 10px;
+} */
+
+.social__icon {
+  position: absolute;
+  right: 180px;
+  bottom: 110px;
 }
