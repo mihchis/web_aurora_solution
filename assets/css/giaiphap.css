@@ -34,26 +34,23 @@ html {
   right: 0;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 5rem; /* updated to rem unit */
   background-color: #fff;
   z-index: 99999;
-  padding: 0 20px;
-}
-
-/* optional: add a box-shadow for a subtle effect */
-.header {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0 1.25rem; /* updated to rem unit */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2); /* updated to rem unit */
 }
 
 .logo {
+  /* styles for logo */
 }
 
 .nav {
   display: none; /* hide the navigation by default */
 }
 
-/* show the navigation when the screen is wider than 768px */
-@media (min-width: 768px) {
+/* show the navigation when the screen is wider than 48rem (768px * 0.0625rem) */
+@media (min-width: 48rem) {
   .nav {
     display: flex;
     justify-content: space-between;
@@ -64,7 +61,7 @@ html {
 
 .nav li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 1rem; /* updated to rem unit */
 }
 
 .nav li a {
@@ -74,18 +71,18 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem; /* updated to rem unit */
   line-height: 1;
-  padding: 0 10px;
+  padding: 0 1rem; /* updated to rem unit */
   text-align: center;
   flex-grow: 1;
 }
 
-/* adjust the navigation links when the screen is wider than 768px */
-@media (min-width: 768px) {
+/* adjust the navigation links when the screen is wider than 48rem (768px * 0.0625rem) */
+@media (min-width: 48rem) {
   .nav li a {
-    font-size: 20px;
-    padding: 0 20px;
+    font-size: 1.25rem; /* updated to rem unit */
+    padding: 0 2rem; /* updated to rem unit */
   }
 }
 
@@ -101,6 +98,7 @@ html {
   text-align: center;
   align-items: baseline;
 }
+
 .content {
 }
 
